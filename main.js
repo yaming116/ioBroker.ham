@@ -12,7 +12,7 @@ const path    = require('path');
 
 // it is not an object.
 function createHam(options) {
-    const dataDir = path.normalize(path.join(utils.controllerDir, require(path.join(utils.controllerDir, 'lib', 'tools.js')).getDefaultDataDir()));
+    const dataDir = dataDir = path.normalize(utils.controllerDir + '/../../iobroker-data');
 
     // you have to call the adapter function and pass a options object
     // name has to be set and has to be equal to adapters folder name and main file name excluding extension
